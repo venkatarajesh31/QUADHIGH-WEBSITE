@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QUADHIGH</title>
-  <meta name="description" content="QUADHIGH provides NetSuite implementation, customization, integration and managed services. Explore our experience across 10 countries.">
+  <meta name="theme-color" content="#0d1b3e">
+  <title>QUADHIGH | NetSuite Consulting, Implementation &amp; Support</title>
+  <meta name="description" content="Experienced NetSuite functional and technical consulting. QUADHIGH helps you implement, customize, connect and support NetSuite, including SuiteCommerce and integrations.">
   <link rel="icon" type="image/svg+xml" href="assets/quadhigh-symbol.svg">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
+  <script src="js/hero-motion.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-row">
-      <a href="#about" class="nav-logo">
-      <svg class="brand-logo-svg" viewBox="0 0 380 82" xmlns="http://www.w3.org/2000/svg" aria-label="QUADHIGH">
+      <a href="#about" class="nav-logo" aria-label="QUADHIGH home"><svg class="brand-logo-svg" viewBox="0 0 380 82" xmlns="http://www.w3.org/2000/svg" aria-label="QUADHIGH">
         <rect x="0" y="14" width="30" height="30" rx="6" fill="#0EA5E9"/>
         <rect x="0" y="52" width="30" height="30" rx="6" fill="#0EA5E9"/>
         <rect x="38" y="0" width="30" height="30" rx="6" fill="#0EA5E9"/>
@@ -22,32 +23,88 @@
         <text x="88" y="57" font-family="'Montserrat',sans-serif" font-weight="800" font-size="44" letter-spacing="0.025em">
           <tspan fill="#FFFFFF">QUAD</tspan><tspan fill="#0EA5E9">HIGH</tspan>
         </text>
-      </svg>
-    </a>
-      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu</button>
+      </svg></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
       <nav id="primary-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#offerings">Services</a>
-          <a href="#process">Process</a>
-          <a href="#ai-delivery">AI Advantage</a>
-          <a href="#contact">Contact</a>
+        <a href="#offerings">Services</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#process">How we work</a>
+        <a href="#questions">FAQs</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="cta schedule-cta" href="#contact">Schedule a Call</a>
+      <a class="cta header-cta" href="#contact">Let’s talk</a>
     </div>
   </header>
   <main id="main" tabindex="-1">
-    <section id="about" class="landing">
+    <section data-nav-group="about" id="about" class="hero dark-section" data-motion="globe" data-hero-default="globe" aria-labelledby="hero-title">
+      <div class="hero-motion" aria-hidden="true">
+        <video id="hero-video" class="hero-video" poster="assets/hero-globe-hd-poster.jpg" muted loop playsinline preload="none" tabindex="-1"></video>
+      </div>
       <div class="wrap">
-        <div class="landing-grid">
-          <div class="intro">
-            <p class="eyebrow">About QUADHIGH</p>
-            <h1>NetSuite expertise <span>across 10 countries</span></h1>
-            <p>Our team brings about 15 years of NetSuite experience across implementation, customization and ongoing support. We’ve handled more than 100 projects and provided managed services for 5-Star NetSuite partners.</p>
-            <div class="hero-actions">
-              <a class="cta" href="#offerings">Explore our services</a>
-            </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">NetSuite consulting · Implementation · Support</p>
+            <h1 id="hero-title">NetSuite expertise.<br><span>Across your business.</span></h1>
+            <p class="hero-description">Implement, customize, integrate and support NetSuite with functional and technical specialists. We help you move from business requirements to a system that works for your team.</p>
+            <div class="actions"><a class="cta" href="#contact">Discuss your NetSuite needs</a><a class="text-link light" href="#offerings">Explore our services</a></div>
           </div>
-          <figure class="map">
+        </div>
+        <div class="hero-proof" aria-label="Our expertise">
+          <div><strong>13+ years</strong><span>of NetSuite experience</span></div>
+          <div><strong>100+ projects</strong><span>Handled across our team’s experience</span></div>
+          <div><strong>11 certifications</strong><span>NetSuite credentials across our team</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section data-nav-group="offerings" id="offerings" class="section services" aria-labelledby="services-title"><div class="wrap">
+        <div class="section-heading stacked-heading"><p class="eyebrow">How we can help</p><h2 id="services-title">Start where your business needs us.</h2><p>Implementation, development, integrations and support. Explore the expertise you need, all in one place.</p></div>
+        <div class="service-gallery"><article class="service-tile" id="service-implementations">
+            <div class="service-art art-implementations" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="22" height="25" rx="3"/><path d="M11 4V2h10v2M11 12h10M11 18h10M11 24h6"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Implementation</h3><p>Requirements, configuration, testing and training for your NetSuite rollout.</p></div>
+            <span id="implementations-details" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-migration">
+            <div class="service-art art-migration" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="7" rx="9" ry="4"/><path d="M3 7v17c0 5 18 5 18 0V7M3 15c0 5 18 5 18 0M25 11v15m-4-4 4 4 4-4"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Data migration</h3><p>Clean, map and validate your records for a reliable transition.</p></div>
+            <span id="migration-details" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-customizations">
+            <div class="service-art art-customizations" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 8-8 8 8 8m10-16 8 8-8 8M19 4l-6 24"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Customization</h3><p>SuiteScript, workflows and reporting shaped around how your team works.</p></div>
+            <span id="customizations-details" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-suiteapps">
+            <div class="service-art art-suiteapps" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="11" height="11" rx="2"/><rect x="18" y="3" width="11" height="11" rx="2"/><rect x="3" y="18" width="11" height="11" rx="2"/><path d="M18 24h12m-6-6v12"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>SuiteApps</h3><p>Custom applications for requirements that go beyond standard NetSuite configuration.</p></div>
+            <span id="suiteapps-details" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-integrations">
+            <div class="service-art art-integrations" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="11" width="9" height="10" rx="2"/><rect x="21" y="2" width="9" height="10" rx="2"/><rect x="21" y="21" width="9" height="9" rx="2"/><path d="M11 16h5V7h5M16 16v10h5"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Integrations</h3><p>Celigo and custom API connections, with data mapping and flow troubleshooting.</p></div>
+            <span id="integrations" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-commerce">
+            <div class="service-art art-commerce" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12 6 3h20l3 9M5 16v13h22V16M12 29V19h8v10"/><path d="M3 12a4.3 4.3 0 0 0 8.6 0 4.4 4.4 0 0 0 8.8 0 4.3 4.3 0 0 0 8.6 0Z"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>SuiteCommerce</h3><p>SuiteCommerce Advanced storefronts, custom shopping features and connected customer experiences.</p></div>
+            <span id="commerce" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-managed">
+            <div class="service-art art-managed" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-3a12 12 0 0 1 24 0v3M28 23c0 5-5 7-12 7"/><rect x="2" y="14" width="7" height="11" rx="3"/><rect x="23" y="14" width="7" height="11" rx="3"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Managed services</h3><p>Administration, troubleshooting and ongoing improvements for your NetSuite account.</p></div>
+            <span id="managed-details" class="service-anchor" aria-hidden="true"></span>
+          </article><article class="service-tile" id="service-advisory">
+            <div class="service-art art-advisory" aria-hidden="true"><span class="art-ring ring-one"></span><span class="art-ring ring-two"></span><span class="art-line"></span><span class="art-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2 12 5v9c0 7-12 14-12 14S4 23 4 16V7Zm-6 14 4 4 8-9"/></svg></span><span class="art-square square-one"></span><span class="art-square square-two"></span></div>
+            <div class="tile-copy"><h3>Advisory &amp; oversight</h3><p>Independent solution reviews, project guidance and collaboration with your existing partner.</p></div>
+            <span id="advisory-details" class="service-anchor" aria-hidden="true"></span>
+          </article></div>
+      
+        
+      </div></section>
+
+    <section data-nav-group="expertise" id="expertise" class="section expertise" aria-labelledby="expertise-title">
+      <div class="wrap">
+        <div class="section-heading stacked-heading"><p class="eyebrow">Why QUADHIGH</p><h2 id="expertise-title">Business understanding. NetSuite depth.</h2><p>Functional and technical expertise, with a shared understanding of what your business needs.</p></div>
+        <div class="expertise-points why-gallery">
+          <article class="why-card"><div class="why-art"><span class="why-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="13" r="9"/><path d="m20 20 9 9M8 13h10m-5-5v10"/></svg></span><div class="why-mini-flow"><span>People</span><i></i><span>Processes</span><i></i><span>Priorities</span></div></div><div class="why-copy"><h3>Business context first</h3><p>Understand how your team works before choosing what to configure or build.</p></div></article>
+          <article class="why-card why-featured"><div class="why-art"><div class="expertise-pair"><span><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="22" height="25" rx="3"/><path d="M11 4V2h10v2M11 12h10M11 18h10M11 24h6"/></svg><strong>Functional</strong></span><b aria-hidden="true">+</b><span><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 8-8 8 8 8m10-16 8 8-8 8M19 4l-6 24"/></svg><strong>Technical</strong></span></div></div><div class="why-copy"><h3>Connected expertise</h3><p>Bring business requirements and technical delivery into the same conversation.</p></div></article>
+          <article class="why-card"><div class="why-art"><span class="why-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-3a12 12 0 0 1 24 0v3M28 23c0 5-5 7-12 7"/><rect x="2" y="14" width="7" height="11" rx="3"/><rect x="23" y="14" width="7" height="11" rx="3"/></svg></span><div class="why-mini-flow"><span>Build</span><i></i><span>Handover</span><i></i><span>Improve</span></div></div><div class="why-copy"><h3>Support that continues</h3><p>Carry the work through testing, handover and the changes that follow go-live.</p></div></article>
+        </div>
+        <div class="experience-grid" id="experience"><div class="experience-copy"><p class="eyebrow">Our team’s experience</p><h3>Built through projects<br>across 10 countries.</h3><p>Our team has handled more than 100 projects and provided managed services for 5-Star NetSuite partners. That experience informs how we approach each new engagement.</p><p class="small-note">Figures describe the team’s experience, including work before QUADHIGH.</p><div class="experience-metrics"><div><strong>10 countries</strong><span>Experience across markets and business models</span></div></div></div><figure class="map">
             <svg viewBox="0 0 795 315" role="img" aria-label="World map showing countries where our team has worked">
 <polygon class="continent" points="26.4,44.0 46.2,30.8 88.0,35.2 116.6,28.6 149.6,33.0 182.6,24.2 215.6,26.4 244.2,44.0 266.2,68.2 253.0,85.8 228.8,96.8 217.8,132.0 200.2,121.0 182.6,129.8 202.4,149.6 213.4,167.2 224.4,169.4 217.8,149.6 191.4,145.2 165.0,134.2 138.6,116.6 123.2,85.8 110.0,68.2 68.2,55.0 41.8,66.0 26.4,55.0"/>
 <polygon class="continent" points="235.4,15.4 259.6,4.4 338.8,8.8 354.2,30.8 310.2,55.0 286.0,50.6 261.8,33.0"/>
@@ -76,343 +133,50 @@
 </svg>
             <figcaption>Where our team has worked</figcaption>
             <ul><li>United States</li><li>Canada</li><li>United Kingdom</li><li>Germany</li><li>United Arab Emirates</li><li>Saudi Arabia</li><li>India</li><li>China</li><li>Japan</li><li>Australia</li></ul>
-          </figure>
-        </div>
-        <dl class="stats">
-          <div><dt>Years of NetSuite experience</dt><dd>~15</dd></div>
-          <div><dt>Projects handled</dt><dd>100+</dd></div>
-          <div><dt>Experienced team members</dt><dd>10+</dd></div>
-          <div><dt>NetSuite certifications</dt><dd>11</dd></div>
-        </dl>
+          </figure></div>
+        
+        <section id="industries" class="grouped-section industries-section" aria-labelledby="industries-title"><div><div class="section-heading split-heading"><div><p class="eyebrow">Industry experience</p><h2 id="industries-title">Your industry.<br>Your operational realities.</h2></div><p>Our team has worked across these sectors. We bring that context to understanding your workflows, priorities and NetSuite requirements.</p></div><div class="industry-grid"><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12 6 3h20l3 9M5 16v13h22V16M12 29V19h8v10"/><path d="M3 12a4.3 4.3 0 0 0 8.6 0 4.4 4.4 0 0 0 8.8 0 4.3 4.3 0 0 0 8.6 0Z"/></svg></div><h3>Retail</h3><p>Products, inventory &amp; customer orders</p></article><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2 13 7v14l-13 7L3 23V9Zm0 14L3 9m13 7 13-7M16 16v14M10 5l13 7v6"/></svg></div><h3>Trading</h3><p>Purchasing, stock &amp; order fulfillment</p></article><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 29V15l9-6v7l9-6v19ZM22 10V3h5l2 26H3M8 22h2m6 0h2m6 0h2"/></svg></div><h3>Manufacturing</h3><p>Materials, production &amp; inventory</p></article><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 13 22-8v22L4 19Zm5 8 3 8h5l-4-7M26 11l4-2m-4 13 4 2"/></svg></div><h3>Advertising</h3><p>Client projects, costs &amp; billing</p></article><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 24h26M6 22a10 10 0 0 1 20 0M16 12V8m-3 0h6M5 28h22"/></svg></div><h3>Food delivery</h3><p>Order flows, operations &amp; reconciliation</p></article><article class="industry-card"><div class="industry-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="26" height="20" rx="3"/><path d="M11 9V4h10v5M3 17c8 4 18 4 26 0M13 18v5h6v-5"/></svg></div><h3>Services</h3><p>Projects, resources &amp; financial visibility</p></article></div><p class="industry-note">Have a different business model? <a class="text-link" href="#contact">Tell us how you work.</a></p></div></section>
+        <div class="credentials-panel" id="credentials"><div class="credentials-heading"><div><p class="eyebrow">Certifications &amp; credentials</p><h3>Our team&rsquo;s credentials.</h3></div></div><ul class="credential-showcase"><li class="credential-seal"><img src="assets/badges/erp-consultant.png" alt="ERP Consultant Professional" loading="lazy"></li><li class="credential-seal"><img src="assets/badges/administrator.png" alt="Administrator Professional" loading="lazy"></li><li class="credential-seal"><img src="assets/badges/suiteanalytics.png" alt="SuiteAnalytics User Specialist" loading="lazy"></li><li class="credential-seal"><img src="assets/badges/financial-user.png" alt="Financial User Specialist" loading="lazy"></li><li class="credential-seal"><img src="assets/badges/suitefoundations.png" alt="Suite Foundations" loading="lazy"></li><li class="credential-seal"><img src="assets/badges/ai-foundations.png" alt="AI Foundations" loading="lazy"></li><li class="credential-wide"><img src="assets/badges/suitecommerce.png" alt="SuiteCommerce Developer" loading="lazy"></li><li class="credential-round"><img src="assets/badges/avalara.png" alt="Avalara Implementation Partner &mdash; AvaTax, Returns &amp; CertCapture" loading="lazy"></li></ul></div>
       </div>
     </section>
-    <section id="credentials" class="band">
+
+    <section data-nav-group="process" id="process" class="section process" aria-labelledby="process-title">
       <div class="wrap">
-        <h2>Certifications</h2>
-        <p class="lede">Selected NetSuite certifications held across our team and our Avalara implementation partner certification.</p>
-        <ul class="badges">
-          <li><img src="assets/badges/erp-consultant.png" alt="" loading="lazy"><strong>ERP Consultant Professional</strong></li>
-          <li><img src="assets/badges/administrator.png" alt="" loading="lazy"><strong>Administrator Professional</strong></li>
-          <li><img src="assets/badges/suiteanalytics.png" alt="" loading="lazy"><strong>SuiteAnalytics User Specialist</strong></li>
-          <li><img src="assets/badges/financial-user.png" alt="" loading="lazy"><strong>Financial User Specialist</strong></li>
-          <li><img src="assets/badges/suitefoundations.png" alt="" loading="lazy"><strong>Suite Foundations</strong></li>
-          <li><img src="assets/badges/ai-foundations.png" alt="" loading="lazy"><strong>AI Foundations</strong></li>
-          <li><img src="assets/badges/suitecommerce.png" alt="" loading="lazy"><strong>SuiteCommerce Developer</strong></li>
-          <li><img src="assets/badges/avalara.png" alt="" loading="lazy"><strong>Avalara Implementation Partner</strong><span>AvaTax, Returns &amp; CertCapture</span></li>
-        </ul>
-        <h2 class="industries-title">Industries we’ve worked with</h2>
-        <div class="industries-grid">
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="20" width="32" height="22" rx="2"/><path d="M16 20V14a8 8 0 0 1 16 0v6"/><circle cx="24" cy="32" r="3"/></svg>
-          </div>
-          <span>Retail</span>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 42h36M10 42V22l14-14 14 14v20"/><rect x="18" y="30" width="12" height="12"/></svg>
-          </div>
-          <span>Trading</span>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="28" width="12" height="14"/><rect x="18" y="20" width="12" height="22"/><rect x="32" y="12" width="12" height="30"/><path d="M4 42h40"/></svg>
-          </div>
-          <span>Manufacturing</span>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="18"/><path d="M24 6v36M6 24h36M10 12l28 24M36 12L8 36"/></svg>
-          </div>
-          <span>Advertising</span>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 18h32v22a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V18z"/><path d="M16 18V12a8 8 0 0 1 16 0v6"/><path d="M18 30h12M24 26v8"/></svg>
-          </div>
-          <span>Food Delivery</span>
-        </div>
-        <div class="industry-card">
-          <div class="industry-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14h24v6H12z"/><path d="M8 20h32v22H8z"/><path d="M20 26h8v8h-8z"/><circle cx="24" cy="10" r="4"/></svg>
-          </div>
-          <span>Service</span>
-        </div>
-      </div>
-      </div>
+        <div class="section-heading approach-heading"><p class="eyebrow">How we work</p><h2 id="process-title">Clear steps. Shared understanding.</h2><p>Six stages, each with a clear outcome &mdash; from understanding your business to supporting your team after go-live.</p></div>
+        <ol class="approach-timeline" aria-label="Six stages of our implementation process"><li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="13" r="9"/><path d="m20 20 9 9M8 13h10m-5-5v10"/></svg></span><span class="approach-number">1</span></div><h3>Discover</h3><p>Understand your workflows, reporting needs and priorities.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Agreed scope</strong></div></li>
+          <li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="26" height="26" rx="3"/><path d="M3 11h26M12 11v18m6-12h6m-6 6h6"/></svg></span><span class="approach-number">2</span></div><h3>Design</h3><p>Map your processes to the right NetSuite solution.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Shared solution design</strong></div></li>
+          <li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 8-8 8 8 8m10-16 8 8-8 8M19 4l-6 24"/></svg></span><span class="approach-number">3</span></div><h3>Build</h3><p>Configure NetSuite, develop extensions and prepare data.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Working configuration</strong></div></li>
+          <li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="22" height="25" rx="3"/><path d="M11 4V2h10v2m-11 15 4 4 8-10"/></svg></span><span class="approach-number">4</span></div><h3>Test</h3><p>Validate real business scenarios with your users.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Tested workflows</strong></div></li>
+          <li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 25V4m-7 7 7-7 7 7M4 20v8h24v-8"/></svg></span><span class="approach-number">5</span></div><h3>Go live</h3><p>Prepare your team and coordinate the move to production.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Managed transition</strong></div></li>
+          <li class="approach-step"><div class="approach-node" aria-hidden="true"><span class="approach-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17v-3a12 12 0 0 1 24 0v3M28 23c0 5-5 7-12 7"/><rect x="2" y="14" width="7" height="11" rx="3"/><rect x="23" y="14" width="7" height="11" rx="3"/></svg></span><span class="approach-number">6</span></div><h3>Support</h3><p>Resolve early issues and plan the next improvements.</p><div class="approach-outcome"><span class="approach-outcome-label">Outcome</span><strong>Handover &amp; next steps</strong></div></li></ol>
+        <p class="approach-note">A full implementation follows all six stages. Focused improvements use the steps they need.</p>
+        <section id="delivery" class="grouped-section delivery-section" aria-labelledby="delivery-title"><div class="delivery-intro compact-delivery-intro"><h3 id="delivery-title">Offshore capability. Onsite collaboration.</h3></div>
+        <div class="delivery-grid delivery-options">
+          <article class="delivery-option offshore-option"><span class="delivery-option-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><ellipse cx="16" cy="16" rx="6" ry="13"/><path d="M3 16h26M6 8h20M6 24h20"/></svg></span><div class="delivery-option-copy"><p class="eyebrow">Offshore delivery · Hyderabad</p><h3>One coordinated team.</h3><p>From solution design and development to testing and ongoing support.</p><div class="delivery-chips"><span>Solution design</span><span>Development</span><span>Quality &amp; support</span></div><p class="delivery-note">Delivery based in Hyderabad, India.</p></div></article>
+          <article class="delivery-option onsite-option"><span class="delivery-option-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 12c0 8-10 18-10 18S6 20 6 12a10 10 0 0 1 20 0Z"/><circle cx="16" cy="12" r="4"/></svg></span><div class="delivery-option-copy"><p class="eyebrow">Onsite engagement</p><h3>Alongside your team.</h3><p>Senior expertise for workshops, user acceptance testing and go-live.</p><div class="delivery-chips"><span>Workshops</span><span>User acceptance</span><span>Go-live</span></div><p class="delivery-note">Onsite experience in the US, Saudi Arabia and UAE.</p></div></article>
+        </div></section>
+        <section id="engagement" class="grouped-section engagement" aria-labelledby="engagement-title">
+      <div class="engagement-grid"><div><p class="eyebrow">Working together</p><h2 id="engagement-title">An engagement<br>that fits the work.</h2><p>Agree the scope, priorities and commercial approach before work begins.</p><a class="text-link" href="#contact">Talk through your requirements</a></div><div class="engagement-options"><article><h3>Time &amp; materials</h3><p>For evolving requirements and changing priorities.</p><ul><li>Pay for the hours actually worked.</li><li>Upfront estimates and updates on hours used.</li><li>Adjust the focus as your needs evolve.</li></ul></article><article><h3>Fixed fee</h3><p>For a defined scope and agreed deliverables.</p><ul><li>Agree on the scope and price before work starts.</li><li>Plan around clear deliverables.</li><li>Approve scope changes before additional work.</li></ul></article></div></div>
     </section>
-    <section id="offerings" class="band services">
-      <div class="wrap">
-        <h2>Our services</h2>
-        <div class="service-chart">
-          <div class="chart-center"><img src="assets/netsuite-mark.png" alt="" width="48" height="26"><h3>NetSuite offerings</h3></div>
-          <ul aria-label="NetSuite offerings">
-            <li><a href="#service-managed">Managed Services</a></li>
-            <li><a href="#service-customizations">Customizations &amp; Enhancements</a></li>
-            <li><a href="#service-integrations">Integrations</a></li>
-            <li><a href="#service-commerce">SuiteCommerce Advanced &amp; Website Development</a></li>
-            <li><a href="#service-suiteapps">SuiteApps Development</a></li>
-            <li><a href="#service-advisory">NetSuite Advisory &amp; Oversight</a></li>
-            <li><a href="#service-migration">Data Migration</a></li>
-            <li><a href="#service-implementations">Implementations</a></li>
-          </ul>
-        </div>
-        <div class="service-details">
-          <article id="service-managed"><h3>Managed Services</h3><p>Ongoing NetSuite support after go-live, including fixes, admin tasks, reports and small improvements, so your team can focus on the business.</p></article>
-          <article id="service-customizations"><h3>Customizations &amp; Enhancements</h3><p>We tailor NetSuite to the way you work, with custom fields, scripts, workflows and reports, and improve it as your needs change.</p></article>
-          <article id="service-integrations"><h3>Integrations</h3><p>We connect NetSuite with the systems you use, such as Avalara, CRM and ecommerce platforms, so your data flows without manual work.</p></article>
-          <article id="service-commerce"><h3>SuiteCommerce Advanced &amp; Website Development</h3><p>We design and build ecommerce websites on SuiteCommerce Advanced, connected to your NetSuite data, with custom features and a smooth shopping experience.</p></article>
-          <article id="service-suiteapps"><h3>SuiteApps Development</h3><p>We build custom apps on the NetSuite platform that add features NetSuite doesn’t offer out of the box.</p></article>
-          <article id="service-advisory"><h3>NetSuite Advisory &amp; Oversight</h3><p class="detail-label">Client-Side Project Management</p><p>Already working with another NetSuite partner? We represent your side, review the work and make sure your project follows NetSuite best practices.</p></article>
-          <article id="service-migration"><h3>Data Migration</h3><p>We move your data from your old system into NetSuite, cleaned and checked so you start with accurate records.</p></article>
-          <article id="service-implementations"><h3>Implementations</h3><p>We set up NetSuite to fit your business, from configuration and workflows to training and go-live.</p></article>
-        </div>
-        <h3 class="delivery-title">How we deliver</h3>
-        <div class="experience-support">
-      <div class="support-card">
-        <div class="support-card__icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="20"/><path d="M24 4a28 28 0 0 1 0 40M24 4a28 28 0 0 0 0 40M4 24h40M6 14h36M6 34h36"/></svg>
-        </div>
-        <h3>Offshore Delivery Excellence</h3>
-        <p>Comprehensive end-to-end delivery covering every phase of your NetSuite lifecycle from our Hyderabad Center of Excellence.</p>
-        <ul class="support-card__list">
-          <li>Requirements Gathering &amp; Process Mapping</li>
-          <li>Solution Architecture &amp; Scoping</li>
-          <li>Full System Implementation &amp; Customization</li>
-          <li>Enterprise Third-Party Integrations</li>
-          <li>Automated &amp; Manual Quality Analysis</li>
-          <li>Post Go-Live Hypercare &amp; SLA Support</li>
-        </ul>
-      </div>
-      <div class="support-card">
-        <div class="support-card__icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 4L4 18v22h16V28h8v12h16V18L24 4z"/><circle cx="24" cy="20" r="4"/></svg>
-        </div>
-        <h3>Onsite Senior Engagement</h3>
-        <p>Our senior architects travel directly to your facilities for critical strategic phases and high-stake rollouts.</p>
-        <ul class="support-card__list">
-          <li>United States — Executive workshops &amp; UAT leadership</li>
-          <li>Saudi Arabia — Multi-subsidiary go-live &amp; change management</li>
-          <li>United Arab Emirates — Discovery &amp; enterprise deployment</li>
-        </ul>
-      </div>
-    </div>
-        <div class="engagement" id="engagement">
-          <h3>Our engagement models</h3>
-          <p>Every NetSuite project is different, so we offer two flexible ways to work with us. Both are based on the hours your project needs.</p>
-          <div class="engagement-options">
-            <article>
-              <h4>Time &amp; Materials</h4>
-              <p><strong>Best for projects where requirements may evolve.</strong></p>
-              <ul>
-                <li>Pay for the hours actually worked.</li>
-                <li>Get an estimate up front and regular updates on hours used.</li>
-                <li>Adjust priorities as the project evolves.</li>
-              </ul>
-            </article>
-            <article>
-              <h4>Fixed-Fee</h4>
-              <p><strong>Best for well-defined projects with a clear scope.</strong></p>
-              <ul>
-                <li>We estimate the total hours up front and agree on one price.</li>
-                <li>You know the cost before we start.</li>
-                <li>We discuss and get your approval before starting work outside the agreed scope.</li>
-              </ul>
-            </article>
-          </div>
-          <p class="engagement-note">Both models are available for all our services.</p>
+        <div class="ai-delivery-panel" id="ai-delivery" aria-labelledby="ai-title">
+          <div class="ai-panel-copy"><p class="eyebrow">AI in our delivery</p><h3 id="ai-title">AI-assisted delivery.<br>Expert accountability.</h3><p>Used where appropriate. Reviewed in context. Tested before release.</p></div>
+          <div class="ai-review-flow"><article><span class="ai-flow-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2 4 10 10 4-10 4-4 10-4-10L2 16l10-4ZM27 2v6m-3-3h6"/></svg></span><h4>Assist</h4><p>Draft scripts, transformations and test outlines.</p></article><article class="human-review"><span class="ai-flow-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2 12 5v9c0 7-12 14-12 14S4 23 4 16V7Zm-6 14 4 4 8-9"/></svg></span><h4>Review</h4><p>Specialists check business fit, access and maintainability.</p></article><article><span class="ai-flow-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="22" height="25" rx="3"/><path d="M11 4V2h10v2m-11 15 4 4 8-10"/></svg></span><h4>Validate</h4><p>Test changes against the workflows and data they affect.</p></article></div>
+          <div class="ai-accountability"><span class="ai-accountability-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 2 12 5v9c0 7-12 14-12 14S4 23 4 16V7Zm-6 14 4 4 8-9"/></svg></span><span>Our NetSuite team owns the decisions and the quality of the work.</span></div>
         </div>
       </div>
     </section>
-    <section id="process" class="process">
-      <div class="container">
-        <h2>Our typical implementation process</h2>
-        <p class="section-subtitle">Six steps from understanding your business to supporting your team after go-live.</p>
-        <ol class="process-flow">
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="10"/><path d="m27 27 9 9M16 20h8m-4-4v8"/></svg>
-              <span>1</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Discover</h3>
-              <p>Understand your workflows, reporting needs and priorities. Agree on the scope together.</p>
-            </div>
-          </li>
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="30" height="30" rx="4"/><path d="M9 18h30M20 18v21m7-14h6m-6 7h6"/></svg>
-              <span>2</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Design</h3>
-              <p>Map your processes to NetSuite and agree on configuration, access and integrations.</p>
-            </div>
-          </li>
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 14-9 10 9 10m14-20 9 10-9 10m-4-23-6 26"/></svg>
-              <span>3</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Build</h3>
-              <p>Configure NetSuite, develop extensions and prepare your data for migration.</p>
-            </div>
-          </li>
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="11" y="10" width="26" height="30" rx="4"/><path d="M19 10V7h10v3m-11 16 4 4 8-9"/></svg>
-              <span>4</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Test</h3>
-              <p>Run everyday scenarios with your users, verify data and address issues before launch.</p>
-            </div>
-          </li>
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 34V14h22v20zM9 38h30m-15-9V19m-4 4 4-4 4 4"/></svg>
-              <span>5</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Go live</h3>
-              <p>Coordinate the final data transfer, prepare users and move to the live system.</p>
-            </div>
-          </li>
-          <li class="process-milestone">
-            <div class="milestone-marker" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 25v-3a13 13 0 1 1 26 0v3m0 6c0 5-5 8-12 8h-3"/><rect x="8" y="23" width="8" height="10" rx="3"/><rect x="32" y="23" width="8" height="10" rx="3"/></svg>
-              <span>6</span>
-            </div>
-            <div class="milestone-copy">
-              <h3>Support</h3>
-              <p>Resolve early issues, answer user questions and agree on what to improve next.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-    <section id="ai-delivery" class="ai-delivery">
-      <div class="container">
-        <h2>AI Advantage</h2>
-        <p class="section-subtitle">We use AI-assisted tools to speed up selected development tasks. Our NetSuite team supervises their use, reviews the results and stays accountable for the quality of the work.</p>
-        <div class="delivery-practices">
-          <article class="delivery-practice">
-            <div class="practice-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="30" height="30" rx="4"/><path d="M9 18h30M20 18v21m7-14h6m-6 7h6"/></svg></div>
-            <div>
-              <h3>Rapid Development Cycles</h3>
-              <p>AI can help with repetitive work such as drafting standard SuiteScript, preparing data transformation scripts and outlining regression tests. That gives our team more time for the work that needs NetSuite expertise.</p>
-            </div>
-          </article>
-          <article class="delivery-practice">
-            <div class="practice-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m17 14-9 10 9 10m14-20 9 10-9 10m-4-23-6 26"/></svg></div>
-            <div>
-              <h3>Multi-Layer Human Inspection</h3>
-              <p>Our NetSuite architects review code and configuration for business fit, access controls and SuiteCloud limits. The team checks the result in the context of your system before approving it.</p>
-            </div>
-          </article>
-          <article class="delivery-practice">
-            <div class="practice-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="10"/><path d="m27 27 9 9M16 20h8m-4-4v8"/></svg></div>
-            <div>
-              <h3>Enterprise-Grade Reliability</h3>
-              <p>We test changes against real workflows, including the integrations and data they affect. Before release, we consider how the changes will be maintained and what they could mean for future NetSuite updates.</p>
-            </div>
-          </article>
-          <article class="delivery-practice">
-            <div class="practice-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="11" y="10" width="26" height="30" rx="4"/><path d="M19 10V7h10v3m-11 16 4 4 8-9"/></svg></div>
-            <div>
-              <h3>A Method That Fits the Project</h3>
-              <p>We decide where AI makes sense based on the task, the sensitivity of the data and whether we can verify the result. Some tasks are better handled through direct analysis or hands-on configuration.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-badge">Get In Touch</span>
-          <h2 class="section-title">Contact Us</h2>
-          <p class="section-subtitle">Tell us about your NetSuite project, support needs, or a good time for a call.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <div class="contact-item">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <div>
-                <strong>Email</strong>
-                <a href="mailto:quadhighpvt@gmail.com" class="config-email">quadhighpvt@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              <div>
-                <strong>LinkedIn</strong>
-                <a href="https://www.linkedin.com/company/quadhigh/" target="_blank" rel="noopener" class="config-linkedin">Connect on LinkedIn</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <div>
-                <strong>Office</strong>
-                <span>Hyderabad Metropolitan City, India</span>
-              </div>
-            </div>
-          </div>
-          <form class="contact-form" id="contactForm" method="post" aria-describedby="form-notice">
-            <p id="form-notice" class="form-notice">Online submission is unavailable for now. Please <a href="mailto:quadhighpvt@gmail.com">email us</a> with your enquiry.</p>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Your name">
-              </div>
-              <div class="form-group">
-                <label for="email">Work Email *</label>
-                <input type="email" id="email" name="email" required placeholder="you@company.com">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your company">
-              </div>
-              <div class="form-group">
-                <label for="service">Service Required</label>
-                <select id="service" name="service">
-                  <option value="">Select a service</option>
-                  <option value="implementation">NetSuite Implementation</option>
-                  <option value="customization">Customizations</option>
-                  <option value="integration">Integrations</option>
-                  <option value="managed">Managed Services</option>
-                  <option value="commerce">SuiteCommerce Advanced &amp; Website Development</option>
-                  <option value="advisory">NetSuite Advisory &amp; Oversight</option>
-                  <option value="suiteapps">SuiteApps Development</option>
-                  <option value="migration">Data Migration</option>
-                  <option value="support">Hourly Support</option>
-                  <option value="enhancement">Project Enhancement</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="message">Project Details</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, timeline, and requirements..."></textarea>
-            </div>
-            <button type="submit" class="cta" disabled>Send Inquiry</button>
-          </form>
-        </div>
-      </div>
-    </section>
+
+    <section data-nav-group="questions" id="questions" class="section faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div><p class="eyebrow">A few useful answers</p><h2 id="faq-title">Before we talk.</h2><p>A new implementation or a specific issue—either is a good place to start.</p></div><div class="faq-list">
+      <details><summary>Can you help with an existing NetSuite account?<span class="expand-icon" aria-hidden="true"></span></summary><p>Yes. Our services cover existing accounts as well as new implementations, including configuration improvements, custom development, integrations and managed support.</p></details>
+      <details><summary>Can you work alongside our existing NetSuite partner?<span class="expand-icon" aria-hidden="true"></span></summary><p>Yes. Our advisory and oversight offering provides client-side project management and solution reviews. We agree responsibilities and how to collaborate at the start of the engagement.</p></details>
+      <details><summary>Do we need a full implementation project?<span class="expand-icon" aria-hidden="true"></span></summary><p>No. You can discuss a specific enhancement, integration, storefront requirement or support need. We’ll scope the work around the problem you want to solve.</p></details>
+      <details><summary>How do you estimate cost and timelines?<span class="expand-icon" aria-hidden="true"></span></summary><p>We first understand your requirements, current setup, data and integrations. We then discuss an estimate and an appropriate engagement model, including any dependencies on your team.</p></details>
+    </div></div></section>
+
+    <section data-nav-group="contact" id="contact" class="section contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div class="contact-copy"><p class="eyebrow">Let’s talk NetSuite</p><h2 id="contact-title">What would you<br>like to make better?</h2><p>Tell us what you’re planning, what’s getting in the way, or where you need experienced help.</p><a class="contact-email" href="mailto:quadhighpvt@gmail.com">quadhighpvt@gmail.com</a><div class="contact-details"><p><strong>Based in Hyderabad</strong><br>Hyderabad Metropolitan City, India</p><a class="text-link" href="https://www.linkedin.com/company/quadhigh/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div></div>
+      <form class="contact-form" id="contactForm" aria-describedby="form-notice"><h3>Start the conversation</h3><p id="form-notice">Prepare an enquiry in your email app. You can review it before sending, or copy the details to send yourself.</p><div class="form-row"><div class="form-group"><label for="name">Name <span>(required)</span></label><input id="name" name="name" autocomplete="name" required maxlength="120" placeholder="Your name"></div><div class="form-group"><label for="email">Email <span>(required)</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="you@company.com"></div></div><div class="form-row"><div class="form-group"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" maxlength="160" placeholder="Company name"></div><div class="form-group"><label for="service">How can we help?</label><select id="service" name="service"><option value="">Choose a service</option><option value="implementation">NetSuite implementation</option><option value="migration">Data migration</option><option value="customization">Customization &amp; enhancements</option><option value="suiteapps">SuiteApps development</option><option value="integration">Integrations</option><option value="commerce">SuiteCommerce &amp; websites</option><option value="managed">Managed services</option><option value="advisory">Advisory &amp; oversight</option><option value="other">Help defining the scope</option></select></div></div><div class="form-group"><label for="message">What are you working on? <span>(required)</span></label><textarea id="message" name="message" rows="4" required maxlength="2000" placeholder="Your goals, current challenges, or the help you need…"></textarea></div><div class="actions form-actions"><button class="cta" type="submit" disabled>Prepare email</button><button class="copy-button" type="button" id="copyEnquiry" disabled>Copy enquiry</button></div><p class="form-status" id="form-status" role="status" aria-live="polite"></p><div id="copyFallback" hidden><label for="enquiryText">Copy these details into your email</label><textarea id="enquiryText" readonly rows="7"></textarea></div><noscript><p>Please <a href="mailto:quadhighpvt@gmail.com">email us directly</a> to discuss your project.</p></noscript></form>
+    </div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-row"><a href="#about" class="footer-logo">
-          <svg class="brand-logo-svg brand-logo-svg--footer" viewBox="0 0 380 82" xmlns="http://www.w3.org/2000/svg" aria-label="QUADHIGH">
-            <rect x="0" y="14" width="30" height="30" rx="6" fill="#0EA5E9"/>
-            <rect x="0" y="52" width="30" height="30" rx="6" fill="#0EA5E9"/>
-            <rect x="38" y="0" width="30" height="30" rx="6" fill="#0EA5E9"/>
-            <rect x="38" y="38" width="30" height="30" rx="6" fill="#0EA5E9"/>
-            <text x="88" y="57" font-family="'Montserrat',sans-serif" font-weight="800" font-size="44" letter-spacing="0.025em">
-              <tspan fill="#FFFFFF">QUAD</tspan><tspan fill="#0EA5E9">HIGH</tspan>
-            </text>
-          </svg>
-        </a><div class="footer-details"><p>&copy; 2026 QUADHIGH. All rights reserved.</p></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-row"><a class="text-link" href="https://www.linkedin.com/company/quadhigh/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a><a href="#about" class="footer-top">Back to top</a></div><div class="wrap footer-bottom"><span>© 2026 QUADHIGH. All rights reserved.</span></div></footer>
 </body>
 </html>
