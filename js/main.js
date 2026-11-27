@@ -1,6 +1,7 @@
 const menu = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#primary-nav');
 const header = document.querySelector('.site-header');
+const footer = document.querySelector('.site-footer');
 const mobile = window.matchMedia('(max-width: 900px)');
 
 function updateMenu(open = false) {
@@ -20,11 +21,17 @@ updateMenu();
 
 // Keep anchor destinations clear of the sticky header, including the mobile menu.
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-function updateHeaderOffset() {
-  document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+function updatePageOffsets() {
+  const root = document.documentElement;
+  root.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  root.style.setProperty('--footer-height', `${footer.getBoundingClientRect().height}px`);
 }
-if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
-updateHeaderOffset();
+if ('ResizeObserver' in window) {
+  const observer = new ResizeObserver(updatePageOffsets);
+  observer.observe(header);
+  observer.observe(footer);
+}
+updatePageOffsets();
 
 function findAnchorTarget(hash) {
   if (!hash || hash === '#') return null;
@@ -38,7 +45,7 @@ function scrollToSection(target, { focus = true, animate = true } = {}) {
   // Wait for the mobile menu to close before calculating the sticky-header offset.
   requestAnimationFrame(() => {
     cancelSectionSettle();
-    updateHeaderOffset();
+    updatePageOffsets();
     const gap = target.matches('main > [data-nav-group]') ? 0 : 20;
     const top = Math.max(0, window.scrollY + target.getBoundingClientRect().top - header.offsetHeight - gap);
     if (focus) {
@@ -102,9 +109,11 @@ function settleSection() {
   let closest;
 
   for (const section of sectionGroups) {
-    const top = Math.max(0, Math.round(position + section.getBoundingClientRect().top - headerHeight));
+    const boundary = Math.max(0, Math.round(position + section.getBoundingClientRect().top - headerHeight));
+    if (boundary > maxScroll + 1) continue;
+    const top = boundary >= maxScroll - 1 ? maxScroll : boundary;
     const distance = top - position;
-    if (top > maxScroll || Math.abs(distance) > reach) continue;
+    if (Math.abs(distance) > reach) continue;
     // A wheel step can cross the boundary. Never pull back a gesture that starts at it.
     const crossedBoundary = (top - start) * direction > 24;
     if (distance * direction < 0 && (!crossedBoundary || Math.abs(distance) > overshoot)) continue;
