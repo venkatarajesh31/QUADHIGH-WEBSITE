@@ -21,7 +21,7 @@ updateMenu();
 // Keep anchor destinations clear of the sticky header, including the mobile menu.
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 function updateHeaderOffset() {
-  document.documentElement.style.setProperty('--header-offset', `${header.offsetHeight + 20}px`);
+  document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
 }
 if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
 updateHeaderOffset();
